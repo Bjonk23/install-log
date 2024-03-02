@@ -1,0 +1,7 @@
+# Sample configuration file for install-log
+
+INCLUDE=/bin:/lib:/opt:/sbin:/usr
+EXCLUDE=/lib/modules:/usr/src:/usr/local/src
+LOGDIR=/var/install-logs
+EDITOR=/bin/vi
+VERBOSITY=0

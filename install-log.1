@@ -1,0 +1,71 @@
+.TH "install-log" "1" "1.9" "Andy Goth and James Reeves" "System"
+.SH "NAME"
+.LP 
+install\-log \- logs source installations
+.SH "SYNTAX"
+.LP 
+install\-log <\fIpackage\fP> [\fIOPTIONS\fP]
+.SH "DESCRIPTION"
+.LP 
+install\-log is a simple program to aid package management when installing from
+source code. Run "install\-log <package\-name>" immediately after you type "make
+install" (or whatever you do to install something), and it'll make a list of
+all the changes to your filesystem to /var/install\-logs/<package\-name> for you
+to review when uninstalling, upgrading, or just simply taking account of your
+system. It's also good for identifying the owner of a particular file; just
+grep for it in /var/install\-logs/*.
+.SH "OPTIONS"
+.LP 
+.TP 
+\fB\-e\fR, \fB\-\-edit\fR
+Edit log.
+.TP 
+\fB\-E\fR, \fB\-\-editor=\fR\fICMD\fP
+Use \fICMD\fP with \fB\-\-edit\fR.
+.TP 
+\fB\-f\fR, \fB\-\-force\fR
+Replace existing installation log.
+.TP 
+\fB\-h\fR, \fB\-\-help\fR
+Output a brief help message.
+.TP 
+\fB\-i\fR, \fB\-\-include=\fR\fIDIR1:DIR2:...\fP
+Scan these directories.
+.TP 
+\fB\-l\fR, \fB\-\-logdir=\fR\fIDIR\fP
+Put logs in \fIDIR\fP.
+.TP 
+\fB\-q\fR, \fB\-\-quiet\fR
+Suppress output (except for error messages).
+.TP 
+\fB\-r\fR, \fB\-\-root=\fR\fIDIR\fP
+Use \fIDIR\fP as the root directory.
+.TP 
+\fB\-x\fR, \fB\-\-exclude=\fR\fIDIR1:DIR2:...\fP
+Exclude these directories.
+.SH "FILES"
+.LP 
+\fI/etc/install\-log.rc\fP 
+.br 
+\fI/var/install\-logs\fP 
+.SH "ENVIRONMENT VARIABLES"
+.LP 
+.TP 
+\fBLFS\fP
+If set, this is used as the root directory. (Useful for setting Linux From
+Scratch)
+.SH "EXAMPLES"
+.LP 
+To run this program the standard way type:
+.LP 
+install\-log mypackage
+.SH "AUTHORS"
+.LP 
+Andy Goth <unununium@openverse.org>
+.br 
+James Reeves <jreeves@fullcircuit.com>
+.SH "SEE ALSO"
+.LP 
+touch(1) find(1L)
+.LP 
+Homepage: http://install\-log.sourceforge.net/

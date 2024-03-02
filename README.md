@@ -28,10 +28,10 @@ results by looking at the contents of /var/install-logs.
 
 install-log is hosted on SourceForge (http://install-log.sourceforge.net/).  To
 download the latest cvs version:
-
+```
 $ export CVSROOT=":pserver:anonymous@cvs.sourceforge.net:/cvsroot/install-log"
 # cvs login                      # Only run one time, ever
 $ cvs checkout install-log       # To download for the first time
 $ cvs update install-log         # To update a previous download
-
+```
 Enjoy.

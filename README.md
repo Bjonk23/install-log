@@ -1,7 +1,17 @@
 # install-log
 Package manager idea for LFS (Linux from scratch). Fork of https://install-log.sourceforge.net to compile to modern glibc.
 
-Original README
+# Installation
+- To compile:
+- ```$ make```
+- To install:
+- ```
+  # make install
+  # touch {LOGDIR}/.timestamp
+  ```
+- Replace {LOGDIR} with the install-log directory that was chosen (Defaults to /var/install-logs/)
+
+# Original README
 ---
 
 install-log is a simple shell script to aid in package management when

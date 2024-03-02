@@ -1,10 +1,16 @@
 # install-log
-Package manager idea for LFS (Linux from scratch). Fork of https://install-log.sourceforge.net to compile to modern glibc.
+Package manager idea for LFS (Linux from scratch). Fork of https://install-log.sourceforge.net with the intent to compile to modern glibc.
+
+## Note: 
+Feel free to fork from here, as im likely to follow in the footsteps of those before me; very infequently update any code thats here. I'm not much of a proper software developer, and my expirences with git are far and few between. I just wanted to fork the original because I got tired of having to re-modify the same 10 lines of code within the original because I kept accidently deleting the source whenever I finished installing LFS.
+
+On top of all of that, im lazy as hell, so something something abandon all hope all ye who enter something something. 
 
 # Installation
-- To compile:
+To compile: 
 - ```$ make```
-- To install:
+
+To install:
 - ```
   # make install
   # touch {LOGDIR}/.timestamp
